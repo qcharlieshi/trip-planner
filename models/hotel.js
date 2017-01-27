@@ -19,7 +19,7 @@ let Hotels = db.define('hotels', {
     amenities: {
         type: Sequelize.TEXT
     }
-})
+});
 
 
 module.exports = Hotel;
