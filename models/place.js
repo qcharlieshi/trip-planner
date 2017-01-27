@@ -20,12 +20,8 @@ const Place = db.define('Place', {
         allowNull: false
     },
     location: {
-        type: Sequelize.ARRAY,
+        type: Sequelize.ARRAY(Sequelize.FLOAT, Sequelize.FLOAT),
         allowNull: false
-    }
-}, {
-    validate: {
-
     }
 });
 

@@ -1,5 +1,4 @@
 'use strict';
-const Sequelize = require('sequelize');
 const db = require('./db');
 
 const Hotels = require('./hotel');

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const Sequelize = require('sequelize');
 const db = require('./models/db.js');
 
@@ -16,6 +15,6 @@ let Activities = db.define('restaurants', {
     age_range: {
         type: Sequelize.STRING
     },
-})
+});
 
 module.exports = Activities;
