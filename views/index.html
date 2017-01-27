@@ -2,8 +2,6 @@
 
 {% block content %}
 
-<h2>This is where the whole app is going to be</h2>
-
 <select name="hotelsList" form="hotelForm">
     {% for hotel in templateHotels %}
         <option value="{{hotel.name}}">{{hotel.name}}</option>
