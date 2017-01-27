@@ -6,21 +6,21 @@
 
 <select name="hotelsList" form="hotelForm">
     {% for hotel in templateHotels %}
-        <option value="{{hotel}}">{{hotel}}</option>
-    {% endfor % }
+        <option value="{{hotel.name}}">{{hotel.name}}</option>
+    {% endfor %}
 </select>
 
 <select name="restaurantsList" form="restaurantForm">
     {% for restaurant in templateRestaurants %}
-    <option value="{{restaurant}}">{{restaurant}}</option>
-    {% endfor % }
+    <option value="{{restaurant.name}}">{{restaurant.name}}</option>
+    {% endfor %}
 </select>
 
 
 <select name="activitiesList" form="activityForm">
     {% for activity in templateActivities %}
-    <option value="{{activity}}">{{activity}}</option>
-    {% endfor % }
+    <option value="{{activity.name}}">{{activity.name}}</option>
+    {% endfor %}
 </select>
 
 
