@@ -1,8 +1,8 @@
 'use strict';
 const Sequelize = require('sequelize');
-const db = require('./models/db.js');
+const db = require('./db.js');
 
-const Place = db.define('Place', {
+const Place = db.define('place', {
     address: {
         type: Sequelize.STRING,
         allowNull: false
@@ -20,12 +20,8 @@ const Place = db.define('Place', {
         allowNull: false
     },
     location: {
-        type: Sequelize.ARRAY,
+        type: Sequelize.ARRAY(Sequelize.FLOAT, Sequelize.FLOAT),
         allowNull: false
-    }
-}, {
-    validate: {
-
     }
 });
 

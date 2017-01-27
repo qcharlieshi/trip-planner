@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const db = require('./models/db.js');
+const db = require('./db.js');
 
 let Activities = db.define('restaurants', {
     id: {
@@ -15,6 +15,6 @@ let Activities = db.define('restaurants', {
     age_range: {
         type: Sequelize.STRING
     },
-})
+});
 
 module.exports = Activities;

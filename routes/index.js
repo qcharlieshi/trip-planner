@@ -7,7 +7,6 @@ let Hotels = db.hotels;
 let Restaurants = db.restaurants;
 let Activities = db.activities;
 
-
 router.get('/', function (req, res, next) {
     let hotelPromise = Hotels.findAll();
     let restaurantPromise = Restaurants.findAll();
@@ -16,7 +15,6 @@ router.get('/', function (req, res, next) {
     Promise.all([hotelPromise, restaurantPromise, activitiesPromise])
         .then( function(stuffArray) {
             console.log(stuffArray[0]);
-
 
             res.render('index',
                 {
