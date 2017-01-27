@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app"
+    "start": "nodemon app",
+    "build-css": "node-sass -w assets/stylesheets/main.scss -o public/stylesheets"
   },
   "keywords": [],
   "author": "Gabriel Lebec <glebec@gmail.com> (https://github.com/glebec)",
@@ -14,6 +15,7 @@
     "body-parser": "^1.16.0",
     "bootstrap": "^3.3.7",
     "express": "^4.14.0",
+    "node-sass": "^4.3.0",
     "nunjucks": "^3.0.0",
     "pg": "^6.1.2",
     "pg-hstore": "^2.3.2",
