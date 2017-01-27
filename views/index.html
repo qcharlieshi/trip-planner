@@ -1,9 +1,26 @@
 {% extends "layout.html" %}
 
 {% block content %}
+
 <h2>This is where the whole app is going to be</h2>
 
+<select name="hotelsList" form="hotelForm">
+    {% for hotel in templateHotels %}
+        <option value="{{hotel}}">{{hotel}}</option>
+    {% endfor % }
+</select>
 
+<select name="restaurantsList" form="restaurantForm">
+    {% for restaurant in templateRestaurants %}
+    <option value="{{restaurant}}">{{restaurant}}</option>
+    {% endfor % }
+</select>
+
+<select name="activitiesList" form="activityForm">
+    {% for activity in templateActivities %}
+    <option value="{{activity}}">{{activity}}</option>
+    {% endfor % }
+</select>
 
 
 {% endblock %}
