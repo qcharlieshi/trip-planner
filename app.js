@@ -30,13 +30,13 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 // routing
-app.use(routes);
+app.use('/', routes);
 app.use(express.static(path.join(__dirname, 'public')));
 
 
 // 404 catching
 app.use(function (req, res, next) {
-    const err = new Error('Not found');
+    let err = new Error('Not found');
     err.status = 404;
     next(err);
 });
