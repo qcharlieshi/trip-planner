@@ -62,6 +62,9 @@ var data = {
         {name: "Washington Square Park", place: {address: "1 Washington Sq E", city: "New York", state: "NY", phone: "123-456-7890", location: [40.732204, -73.998649]}, age_range: "All" },
         {name: "Union Square Holiday Market", place: {address: "Union Sq & W 14th St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.733615, -73.987995]}, age_range: "All" },
         {name: "Strand Bookstore", place: {address: "828 Broadway", city: "New York", state: "NY", phone: "123-456-7890", location: [40.733274, -73.990870]}, age_range: "All" }
+    ],
+    days: [
+        {id: 1, hotel: {id: 1}, restaurant: {id: 1}, activity: {id: 1}}
     ]
 };
 
