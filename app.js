@@ -1,18 +1,15 @@
 'use strict';
 
 // built-in modules
-
 const path = require('path');
 
 // npm packages
-
 const express = require('express');
 const volleyball = require('volleyball');
 const bodyParser = require('body-parser');
 const nunjucks = require('nunjucks');
 
 // our modules
-
 const db = require('./models');
 const routes = require('./routes');
 
