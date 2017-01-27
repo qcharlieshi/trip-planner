@@ -5,6 +5,7 @@ const db = require('../models/index.js');
 let Hotels = require('../models/hotel');
 let Restaurants = require('../models/restaurant');
 let Activities = require('../models/activity');
+let Days = require('../models/day');
 
 router.get('/', function (req, res, next) {
     let hotelPromise = Hotels.findAll();
