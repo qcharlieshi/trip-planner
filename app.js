@@ -14,7 +14,6 @@ const db = require('./models');
 const routes = require('./routes');
 
 // init
-
 const app = express();
 
 // nunjucks rendering boilerplate
@@ -30,7 +29,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // routing
-
 app.use(routes);
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -42,10 +40,10 @@ app.use(function (req, res, next) {
   next(err);
 });
 
+
 app.use(function (err, req, res, next) {
-  // do whatever you want with the error
-  console.log('OOOOHHHH NOOOOOOO!', err.message);
-  // keep this if you still want Express to ultimately handle the error for you
+  console.log('Error:', err.message);
+  err.status = 404;
   next(err);
 });
 
@@ -56,9 +54,9 @@ const PORT = 3000;
 db.sync()
 .then(() => {
   app.listen(PORT, function () {
-    console.log(`Are you watching closely? http://localhost:${PORT}`);
+    console.log(`Listening @ http://localhost:${PORT}`);
   });
 })
 .catch(err => {
-  console.error('Error starting app', err);
+  console.error('Error Starting Application', err);
 });
