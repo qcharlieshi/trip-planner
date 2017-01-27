@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('./db.js');
 
-let Activities = db.define('restaurants', {
+let Activities = db.define('activity', {
     id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
@@ -13,8 +13,9 @@ let Activities = db.define('restaurants', {
         len: [2, 50]
     },
     age_range: {
-        type: Sequelize.STRING
-    },
+        type: Sequelize.STRING,
+        allowNull: false
+    }
 });
 
 module.exports = Activities;
