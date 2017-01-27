@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const Sequelize = require('sequelize');
 const db = require('./models/db.js');
 
