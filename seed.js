@@ -69,12 +69,15 @@ db.sync({force: true})
     .then(function () {
         console.log("Dropped old data, now inserting data");
         const creatingHotels = Promise.map(data.hotels, function (hotel) {
+
             return Hotel.create(hotel, { include: [Place] });
         });
         const creatingRestaurants = Promise.map(data.restaurants, function (restaurant) {
+
             return Restaurant.create(restaurant, { include: [Place] });
         });
         const creatingActivities = Promise.map(data.activities, function (activity) {
+
             return Activity.create(activity, { include: [Place] });
         });
         return Promise.all([creatingHotels, creatingRestaurants, creatingActivities]);
