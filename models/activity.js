@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('./models/db.js');
 
-let Hotels = db.define('hotels', {
+let Activities = db.define('restaurants', {
     id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
@@ -12,16 +12,9 @@ let Hotels = db.define('hotels', {
         allowNull: false,
         len: [2, 50]
     },
-    num_stars: {
-        type: Sequelize.FLOAT,
-        validate: {min: 0, max: 5}
+    age_range: {
+        type: Sequelize.STRING
     },
-    amenities: {
-        type: Sequelize.TEXT
-    }
 })
 
-
-module.exports = Hotels;
-
-
+module.exports = Activities;
