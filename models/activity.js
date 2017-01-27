@@ -1,9 +1,21 @@
-'use strict';
+<<<<<<< HEAD
 const Sequelize = require('sequelize');
-const db = require('./db');
+const db = require('./models/db.js');
 
-const activity;
+let Activities = db.define('restaurants', {
+    id: {
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
+    name: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        len: [2, 50]
+    },
+    age_range: {
+        type: Sequelize.STRING
+    },
+})
 
-// require all the models
-
-module.exports = activity;
+module.exports = Activities;
