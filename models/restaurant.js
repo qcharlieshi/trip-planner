@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const db = require('./models/db.js');
+const db = require('./db.js');
 
 let Restaurants = db.define('restaurants', {
     id: {
@@ -19,6 +19,6 @@ let Restaurants = db.define('restaurants', {
         type: Sequelize.INTEGER,
         validate: {min: 0, max: 5}
     }
-})
+});
 
 module.exports = Restaurants;

@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const db = require('./models/db.js');
+const db = require('./db.js');
 
 let Activities = db.define('restaurants', {
     id: {
