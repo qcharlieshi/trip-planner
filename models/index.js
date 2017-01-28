@@ -7,9 +7,9 @@ const Activities = require('./activity');
 const Restaurants = require('./restaurant');
 const Days = require('./day');
 
-Hotels.belongsTo(Places);
-Restaurants.belongsTo(Places);
-Activities.belongsTo(Places);
+Hotels.belongsTo(Places, {as: 'hotels'});
+Restaurants.belongsTo(Places, {as: 'restaurants'});
+Activities.belongsTo(Places, {as: 'activities'});
 
 Days.hasOne(Hotels);
 Days.hasMany(Restaurants);

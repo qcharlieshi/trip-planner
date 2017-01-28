@@ -2,11 +2,6 @@ const Sequelize = require('sequelize');
 const db = require('./db.js');
 
 let Activities = db.define('activity', {
-    id: {
-        type: Sequelize.INTEGER,
-        primaryKey: true,
-        autoIncrement: true
-    },
     name: {
         type: Sequelize.STRING,
         allowNull: false,
