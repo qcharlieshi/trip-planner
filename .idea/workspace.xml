@@ -2,101 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36c89545-90ca-45ea-adff-b66b991119ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/extra.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/vendor/darwin-x64-48/binding.node" afterPath="$PROJECT_DIR$/node_modules/node-sass/vendor/darwin-x64-48/binding.node" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stylesheets/main.scss" afterPath="$PROJECT_DIR$/assets/stylesheets/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/package.json" afterPath="$PROJECT_DIR$/node_modules/node-sass/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass.gyp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass.gyp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/GNUmakefile.am" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/GNUmakefile.am" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/Makefile" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/Makefile.conf" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/Makefile.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/appveyor.yml" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/appveyor.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/configure.ac" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/configure.ac" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/api-context-internal.md" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/api-context-internal.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/api-context.md" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/api-context.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/api-doc.md" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/api-doc.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/api-function-example.md" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/api-function-example.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/api-function.md" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/api-function.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/api-importer.md" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/api-importer.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/api-value.md" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/api-value.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/build-on-windows.md" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/build-on-windows.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/custom-functions-internal.md" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/docs/custom-functions-internal.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/include/sass/base.h" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/include/sass/base.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/include/sass/context.h" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/include/sass/context.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/include/sass/functions.h" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/include/sass/functions.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/include/sass/values.h" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/include/sass/values.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/include/sass/version.h" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/include/sass/version.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/include/sass/version.h.in" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/include/sass/version.h.in" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/script/ci-build-libsass" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/script/ci-build-libsass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/script/ci-report-coverage" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/script/ci-report-coverage" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/GNUmakefile.am" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/GNUmakefile.am" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/ast.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/ast.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/ast.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/ast.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/ast_def_macros.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/ast_def_macros.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/ast_fwd_decl.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/ast_fwd_decl.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/backtrace.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/backtrace.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/bind.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/bind.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/bind.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/bind.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/check_nesting.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/check_nesting.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/check_nesting.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/check_nesting.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/color_maps.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/color_maps.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/context.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/context.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/context.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/context.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/cssize.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/cssize.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/cssize.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/cssize.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/debugger.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/debugger.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/environment.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/environment.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/environment.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/environment.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/eval.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/eval.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/expand.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/expand.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/expand.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/expand.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/extend.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/extend.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/file.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/file.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/file.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/file.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/functions.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/functions.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/functions.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/functions.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/inspect.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/inspect.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/inspect.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/inspect.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/lexer.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/lexer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/listize.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/listize.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/listize.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/listize.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/memory/SharedPtr.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/memory/SharedPtr.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/memory/SharedPtr.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/memory/SharedPtr.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/node.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/node.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/node.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/node.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/output.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/output.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/parser.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/parser.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/parser.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/parser.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/plugins.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/plugins.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/position.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/position.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/prelexer.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/prelexer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/prelexer.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/prelexer.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/remove_placeholders.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/remove_placeholders.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/remove_placeholders.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/remove_placeholders.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass_context.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass_context.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass_context.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass_context.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass_functions.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass_functions.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass_functions.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass_functions.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass_util.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass_util.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass_values.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass_values.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass_values.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/sass_values.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/source_map.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/source_map.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/subset_map.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/subset_map.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/subset_map.hpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/subset_map.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/to_c.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/to_c.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/util.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/util.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/values.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/src/values.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/win/libsass.targets" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/win/libsass.targets" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/win/libsass.vcxproj.filters" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/libsass/win/libsass.vcxproj.filters" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/src/sass_types/list.cpp" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/sass_types/list.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/test/spec.js" afterPath="$PROJECT_DIR$/node_modules/node-sass/test/spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/main.css" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.html" afterPath="$PROJECT_DIR$/views/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -137,11 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/stylesheets/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="199" column="15" lean-forward="true" selection-start-line="199" selection-start-column="15" selection-end-line="199" selection-end-column="15" />
+            <state relative-caret-position="302">
+              <caret line="171" column="15" lean-forward="true" selection-start-line="171" selection-start-column="15" selection-end-line="171" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -212,6 +128,7 @@
         <option value="$PROJECT_DIR$/views/extra.html" />
         <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/assets/stylesheets/main.scss" />
+        <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
       </list>
     </option>
   </component>
@@ -432,7 +349,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16102000" />
+    <option name="totallyTimeSpent" value="16470000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -647,14 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="97" column="2" lean-forward="false" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/extra.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -700,8 +609,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/stylesheets/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="199" column="15" lean-forward="true" selection-start-line="199" selection-start-column="15" selection-end-line="199" selection-end-column="15" />
+        <state relative-caret-position="302">
+          <caret line="171" column="15" lean-forward="true" selection-start-line="171" selection-start-column="15" selection-end-line="171" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding />
         </state>
       </provider>
