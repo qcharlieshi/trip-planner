@@ -52,7 +52,7 @@ app.use(function (err, req, res, next) {
 });
 
 // Start
-db.sync()
+db.sync() //{force: true}
     .then(() => {
         app.listen(PORT, function () {
             console.log("LISTENING");

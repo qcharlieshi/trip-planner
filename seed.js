@@ -5,11 +5,12 @@
 // The data can then be loaded with the node seed.js
 
 var Promise = require('bluebird');
-var db = require('./models');
+var db = require('./models/index.js');
 var Place = require('./models/place');
 var Hotel = require('./models/hotel');
 var Restaurant = require('./models/restaurant');
 var Activity = require('./models/activity');
+let Day = require('./models/day');
 
 var data = {
     hotels: [
@@ -63,8 +64,13 @@ var data = {
         {name: "Union Square Holiday Market", place: {address: "Union Sq & W 14th St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.733615, -73.987995]}, age_range: "All" },
         {name: "Strand Bookstore", place: {address: "828 Broadway", city: "New York", state: "NY", phone: "123-456-7890", location: [40.733274, -73.990870]}, age_range: "All" }
     ],
-    days: [
-        {id: 1, hotel: {id: 1}, restaurant: {id: 1}, activity: {id: 1}}
+    day: [
+        {date: Date(), hotel: {name: "Andaz Wall Street", place: {address: "75 Wall St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.705137, -74.007624]}, num_stars: 4, amenities: "Pool, Free Wi-Fi" },
+            restaurant: {name: "Bouley", place: {address: "75 Wall St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.705137, -74.013940]}, cuisine: "French", price: 4},
+            activity: {name: "Mahayana Temple Buddhist Association", place: {address: "133 Canal St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.716291, -73.995315]}, age_range: "All" }},
+        {date: Date(), hotel: {name: "Andaz Wall Street", place: {address: "75 Wall St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.705137, -74.007624]}, num_stars: 4, amenities: "Pool, Free Wi-Fi" },
+            restaurant: {name: "Bouley", place: {address: "75 Wall St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.705137, -74.013940]}, cuisine: "French", price: 4},
+            activity: {name: "Mahayana Temple Buddhist Association", place: {address: "133 Canal St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.716291, -73.995315]}, age_range: "All" }}
     ]
 };
 
@@ -83,7 +89,11 @@ db.sync({force: true})
 
             return Activity.create(activity, { include: [Place] });
         });
-        return Promise.all([creatingHotels, creatingRestaurants, creatingActivities]);
+        const creatingDay = Promise.map(data.day, function(day) {
+            return Day.create(day, { include: [Restaurant, Hotel] });
+        })
+
+        return Promise.all([creatingHotels, creatingRestaurants, creatingActivities, creatingDay]);
     })
     .then(function () {
         console.log('Finished inserting data');

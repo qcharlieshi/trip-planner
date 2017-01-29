@@ -7,12 +7,17 @@ const Activities = require('./activity');
 const Restaurants = require('./restaurant');
 const Days = require('./day');
 
-Hotels.belongsTo(Places, {as: 'hotels'});
-Restaurants.belongsTo(Places, {as: 'restaurants'});
-Activities.belongsTo(Places, {as: 'activities'});
+Hotels.belongsTo(Places);
+Restaurants.belongsTo(Places);
+Activities.belongsTo(Places);
 
 Days.hasOne(Hotels);
 Days.hasMany(Restaurants);
 Days.hasMany(Activities);
+
+
+// Hotels.belongsToMany(Days, {through: DayCatalog});
+// Restaurants.belongsToMany(Days, {through: DayCatalog});
+// Activities.belongsToMany(Days, {through: DayCatalog});
 
 module.exports = db;

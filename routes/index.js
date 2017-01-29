@@ -12,16 +12,51 @@ router.get('/', function (req, res, next) {
     let restaurantPromise = Restaurants.findAll();
     let activitiesPromise = Activities.findAll();
 
-    Promise.all([hotelPromise, restaurantPromise, activitiesPromise])
-        .then( function(stuffArray) {
+    // Promise.all([hotelPromise, restaurantPromise, activitiesPromise])
+    //     .then( function(stuffArray) {
+    //
+    //         res.render('index',
+    //             {
+    //               templateHotels: stuffArray[0],
+    //               templateRestaurants: stuffArray[1],
+    //               templateActivities: stuffArray[2]
+    //             })
+    //     })
 
-            res.render('index',
-                {
-                  templateHotels: stuffArray[0],
-                  templateRestaurants: stuffArray[1],
-                  templateActivities: stuffArray[2]
-                })
-        })
+
+    //Days
+
+    Days.findAll().then(day => {
+        res.render('index', { templateDays: day })
+    })
+
 });
+
+
+router.get('/day/:id', function(req, res, next) {
+    let currentDay = req.params.id;
+    //currentDay = true;
+
+    Days.findAll().then(day => {
+        res.render('index', { templateDays: day, current: currentDay })
+    })
+})
+
+router.post('/day/:id', function(req, res, next) {
+    console.log('in post');
+    Days.findOrCreate( {where: {id: req.params.id}})
+        .spread((day, created) => {
+            return Days.create({date: Date()})
+        }).then((createdDay) => {
+            res.redirect(createdDay.route);
+        })
+
+
+        // .then((day, created) => {
+        //     console.log('created');
+        //     //console.log(day);
+        //     res.redirect('/day/' + req.params.id)
+        // })
+})
 
 module.exports = router;
