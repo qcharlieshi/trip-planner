@@ -14,8 +14,7 @@
     </li>
 
     {% for day in templateDays %}
-
-        {% if current === day.id %}
+        {% if current == day.id %}
             <li class="page-item active"><a class="/day{{day.id}}" href="#">{{day.id}}</a></li>
         {% else %}
             <li class="page-item"><a class="/day{{day.id}}" href="#">{{day.id}}</a></li>

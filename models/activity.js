@@ -5,7 +5,7 @@ let Activities = db.define('activity', {
     name: {
         type: Sequelize.STRING,
         allowNull: false,
-        len: [2, 50]
+        length: [2, 50]
     },
     age_range: {
         type: Sequelize.STRING,

@@ -65,11 +65,11 @@ var data = {
         {name: "Strand Bookstore", place: {address: "828 Broadway", city: "New York", state: "NY", phone: "123-456-7890", location: [40.733274, -73.990870]}, age_range: "All" }
     ],
     day: [
-        {date: Date(), hotel: {name: "Andaz Wall Street", place: {address: "75 Wall St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.705137, -74.007624]}, num_stars: 4, amenities: "Pool, Free Wi-Fi" },
-            restaurant: {name: "Bouley", place: {address: "75 Wall St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.705137, -74.013940]}, cuisine: "French", price: 4},
+        {date: Date(), hotels: {name: "Andaz Wall Street", place: {address: "75 Wall St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.705137, -74.007624]}, num_stars: 4, amenities: "Pool, Free Wi-Fi" },
+            restaurants: {name: "Bouley", place: {address: "75 Wall St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.705137, -74.013940]}, cuisine: "French", price: 4},
             activity: {name: "Mahayana Temple Buddhist Association", place: {address: "133 Canal St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.716291, -73.995315]}, age_range: "All" }},
-        {date: Date(), hotel: {name: "Andaz Wall Street", place: {address: "75 Wall St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.705137, -74.007624]}, num_stars: 4, amenities: "Pool, Free Wi-Fi" },
-            restaurant: {name: "Bouley", place: {address: "75 Wall St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.705137, -74.013940]}, cuisine: "French", price: 4},
+        {date: Date(), hotels: {name: "Andaz Wall Street", place: {address: "75 Wall St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.705137, -74.007624]}, num_stars: 4, amenities: "Pool, Free Wi-Fi" },
+            restaurants: {name: "Bouley", place: {address: "75 Wall St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.705137, -74.013940]}, cuisine: "French", price: 4},
             activity: {name: "Mahayana Temple Buddhist Association", place: {address: "133 Canal St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.716291, -73.995315]}, age_range: "All" }}
     ]
 };
@@ -90,7 +90,7 @@ db.sync({force: true})
             return Activity.create(activity, { include: [Place] });
         });
         const creatingDay = Promise.map(data.day, function(day) {
-            return Day.create(day, { include: [Restaurant, Hotel] });
+            return Day.create(day, { include: [Hotel] });
         })
 
         return Promise.all([creatingHotels, creatingRestaurants, creatingActivities, creatingDay]);
