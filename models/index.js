@@ -11,9 +11,11 @@ Hotels.belongsTo(Places);
 Restaurants.belongsTo(Places);
 Activities.belongsTo(Places);
 
-Days.hasOne(Hotels);
+
+// Days.hasOne(Hotels);
 Days.hasMany(Restaurants);
 Days.hasMany(Activities);
+Days.hasMany(Hotels);
 
 
 // Hotels.belongsToMany(Days, {through: DayCatalog});
