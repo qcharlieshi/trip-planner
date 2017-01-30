@@ -10,21 +10,22 @@
 <ul class="pagination" id="day-pages">
 
     <li class="page-item">
-        <a class="page-link" href="#" tabindex="-1">&laquo;</a>
+        <a class="page-link" href="/day/{{current - 1}}" tabindex="-1">&laquo;</a>
     </li>
 
     {% for day in templateDays %}
         {% if current == day.id %}
-            <li class="page-item active"><a class="/day{{day.id}}" href="#">{{day.id}}</a></li>
+            <li class="page-item active"><a href="{{day.route}}">{{day.id}}</a></li>
         {% else %}
-            <li class="page-item"><a class="/day{{day.id}}" href="#">{{day.id}}</a></li>
+            <li class="page-item"><a href="{{day.route}}">{{day.id}}</a></li>
         {% endif %}
 
     {% endfor %}
 
 
+
     <li class="page-item">
-        <a class="page-link" href="/day/add">&raquo;</a>
+        <a class="page-link" href="/day/{{current + 1}}">&raquo;</a>
     </li>
 
     <button type="button" class="btn btn-outline-primary" id="day-button">+Day</button>
