@@ -7,6 +7,11 @@ let Days = db.define('day', {
         defaultValue: Sequelize.NOW
     }
 }, {
+    hooks: {
+        afterDestroy: function (day) {
+            //figure out how to get current value destroyed and get all the values after that and decrement them
+        }
+    },
     getterMethods: {
         route: function() {
             return '/day/' + this.id;

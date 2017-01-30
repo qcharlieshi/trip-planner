@@ -6,7 +6,9 @@
 
 
 
-<button type="button" class="btn btn-outline-primary" id="day-button">-Day</button>
+<form method="GET" action="/day/delete/{{current}}">
+    <button type="submit" class="btn btn-outline-primary" id="day-button">-Day</button>
+</form>
 <ul class="pagination" id="day-pages">
 
     <li class="page-item">
@@ -25,10 +27,11 @@
 
 
     <li class="page-item">
-        <a class="page-link" href="/day/{{current + 1}}">&raquo;</a>
+        <a class="page-link" href="/day/{{templateDays.length + 1}}">&raquo;</a>
     </li>
-
-    <button type="button" class="btn btn-outline-primary" id="day-button">+Day</button>
+    <form method="POST" action="/day/{{templateDays.length + 1}}">
+        <button type="submit" class="btn btn-outline-primary">+Day</button>
+    </form>
 </ul>
 
 
