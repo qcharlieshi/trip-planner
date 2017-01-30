@@ -34,7 +34,7 @@ router.get('/', function (req, res, next) {
 
 
 router.get('/day/:id', function(req, res, next) {
-    let currentDay = +req.params.id;
+    let currentDay = req.params.id;
     //currentDay = true;
 
     Days.findAll().then(day => {
@@ -49,7 +49,7 @@ router.post('/day/:id', function(req, res, next) {
     })
         .then((createdDay) => {
             console.log(createdDay);
-            res.render('index', { days: createdDay });
+            res.redirect(`/day/${req.body.id}`)
         })
         .catch((err) => {
         console.error(err);
@@ -61,6 +61,22 @@ router.post('/day/:id', function(req, res, next) {
         //     //console.log(day);
         //     res.redirect('/day/' + req.params.id)
         // })
+});
+
+router.get('/day/delete/:id', function(req, res, next){
+    console.log("THIS IS DESTROYING");
+    Days.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+        .then(() => {
+            console.log('should be gone');
+            res.redirect('/')
+        })
+        .catch((err) => {
+        console.error(err)
+        })
 });
 
 module.exports = router;

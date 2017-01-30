@@ -162,3 +162,7 @@ body {
   margin-top: 0px;
   border-radius: 2px;
   height: 34px; }
+#map {
+  height: 400px;
+  width: 100%;
+}

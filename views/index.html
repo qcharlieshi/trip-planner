@@ -6,19 +6,26 @@
 
 
 
-<button type="button" class="btn btn-outline-primary" id="day-button">-Day</button>
+<form method="GET" action="/day/delete/{{current}}">
+    <button type="submit" class="btn btn-outline-primary" id="day-button">-Day</button>
+</form>
+
 <ul class="pagination" id="day-pages">
 
     <li class="page-item">
+        {% if current == 1 %}
+        <a class="page-link" tabindex="-1">&laquo;</a>
+        {% else %}
         <a class="page-link" href="/day/{{current - 1}}" tabindex="-1">&laquo;</a>
+        {% endif %}
     </li>
 
     {% for day in templateDays %}
-        {% if current == day.id %}
-            <li class="page-item active"><a href="{{day.route}}">{{day.id}}</a></li>
-        {% else %}
-            <li class="page-item"><a href="{{day.route}}">{{day.id}}</a></li>
-        {% endif %}
+    {% if current == day.id %}
+    <li class="page-item active"><a href="{{day.route}}">{{day.id}}</a></li>
+    {% else %}
+    <li class="page-item"><a href="{{day.route}}">{{day.id}}</a></li>
+    {% endif %}
 
     {% endfor %}
 
@@ -26,10 +33,15 @@
 
     <li class="page-item">
         {% if current == templateDays.length %}
+        <a class="page-link">&raquo;</a>
+        {% else %}
         <a class="page-link" href="/day/{{current + 1}}">&raquo;</a>
+        {% endif %}
     </li>
 
-    <button type="button" class="btn btn-outline-primary" id="day-button">+Day</button>
+    <form method="POST" action="/day/{{templateDays.length + 1}}">
+        <button type="submit" class="btn btn-outline-primary">+Day</button>
+    </form>
 </ul>
 
 
