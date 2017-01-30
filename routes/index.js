@@ -34,22 +34,26 @@ router.get('/', function (req, res, next) {
 
 
 router.get('/day/:id', function(req, res, next) {
-    let currentDay = req.params.id;
+    let currentDay = +req.params.id;
     //currentDay = true;
 
     Days.findAll().then(day => {
         res.render('index', { templateDays: day, current: currentDay })
     })
-})
+});
 
 router.post('/day/:id', function(req, res, next) {
     console.log('in post');
-    Days.findOrCreate( {where: {id: req.params.id}})
-        .spread((day, created) => {
-            return Days.create({date: Date()})
-        }).then((createdDay) => {
-            res.redirect(createdDay.route);
+    Days.create({
+        date: Date.now()
+    })
+        .then((createdDay) => {
+            console.log(createdDay);
+            res.render('index', { days: createdDay });
         })
+        .catch((err) => {
+        console.error(err);
+        });
 
 
         // .then((day, created) => {
@@ -57,6 +61,6 @@ router.post('/day/:id', function(req, res, next) {
         //     //console.log(day);
         //     res.redirect('/day/' + req.params.id)
         // })
-})
+});
 
 module.exports = router;
