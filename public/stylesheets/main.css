@@ -26,7 +26,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333; }
+  background-color: #4B587F; }
 
 body {
   color: #fff;
@@ -137,16 +137,16 @@ body {
 #main-bottom {
   min-height: 100%;
   height: 100%;
-  background-color: antiquewhite; }
+  background-color: #373737; }
 
 #main-container {
   width: 100%;
   margin-top: 0px;
-  min-height: 50%;
+  min-height: 1000px;
   height: 50%;
   padding: 50px 0 0 0;
   /*set left/right padding according to needs*/
-  background-color: antiquewhite; }
+  background-color: #373737; }
 
 #days-header {
   margin-top: 0px;
@@ -226,3 +226,91 @@ body {
 
 input {
   color: black; }
+
+#page-wrap {
+  width: 1200px;
+  padding: 50px;
+  margin: 0 auto;
+  height: 100%; }
+
+.info-col {
+  float: left;
+  width: 33%;
+  height: 100%;
+  padding: 50px 0 0 0; }
+
+.info-col h2 {
+  text-align: center;
+  font-weight: normal;
+  padding: 25px 0; }
+
+.image {
+  height: 100px;
+  text-indent: -9999px;
+  display: block; }
+
+.hotel {
+  background: url(/images/hotelTemp.jpg) center center no-repeat; }
+
+.restaurant {
+  background: url(/images/hotelTemp.png) center center no-repeat; }
+
+.activity {
+  background: url(/images/hotelTemp.png) center center no-repeat; }
+
+dt {
+  padding: 5px;
+  background: #900;
+  color: white;
+  border-bottom: 2px antiquewhite; }
+
+dd {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  padding: 10px;
+  margin-right: 50px;
+  width: 100%;
+  background: #900;
+  color: white; }
+
+dt:nth-of-type(1) {
+  background: #6D7993; }
+
+dd:nth-of-type(1) {
+  background: #6D7993; }
+
+dt:nth-of-type(2) {
+  background: #9099A2; }
+
+dd:nth-of-type(2) {
+  background: #9099A2; }
+
+dt:nth-of-type(3) {
+  background: #6D7993; }
+
+dd:nth-of-type(3) {
+  background: #6D7993; }
+
+dt:nth-of-type(4) {
+  background: #9099A2; }
+
+dd:nth-of-type(4) {
+  background: #9099A2; }
+
+dt:nth-of-type(5) {
+  background: #6D7993; }
+
+dd:nth-of-type(5) {
+  background: #6D7993; }
+
+dt:nth-of-type(6) {
+  background: #9099A2; }
+
+dd:nth-of-type(6) {
+  background: #9099A2; }
+
+.curCol {
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative; }

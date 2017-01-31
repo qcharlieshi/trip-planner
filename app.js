@@ -36,7 +36,7 @@ app.use('/css', express.static(__dirname + '/public/stylesheets/'));
 app.use('/js', express.static(__dirname + '/js/'));
 app.use('/', routes);
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use('/images', express.static(path.join(__dirname, 'images')));
 
 // 404 catching
 app.use(function (req, res, next) {
