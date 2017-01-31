@@ -166,6 +166,8 @@ body {
 /*
 *  Start Custom CSS
 */
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 
 #main-bottom {
   min-height: 100%;
@@ -176,13 +178,16 @@ body {
 #main-container {
   width: 100%;
   margin-top: 0px;
-  min-height: 1000px;
+  min-height: 2000px;
   height: 50%;
   padding: 50px 0 0 0; /*set left/right padding according to needs*/
   background-color: #373737;
 }
 
-//days stuff
+//Days Header and Pagination
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
 #logo {
   font-family: 'Open Sans', sans-serif;
   color: #555;
@@ -194,25 +199,9 @@ body {
   line-height: 1;
   text-shadow: #EDEDED 3px 2px 0;
   position: relative;
+    //background: url(http://subtlepatterns.com/patterns/crossed_stripes.png) repeat;
+    //background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
 }
-#logo:after {
-  content:"dreamdealer";
-  position: absolute;
-  left: 8px;
-  top: 32px;
-}
-#logo:after {
-  background: url(http://subtlepatterns.com/patterns/crossed_stripes.png) repeat;
-  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
-  background-size: 4px 4px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -5;
-  display: block;
-  text-shadow: none;
-}
-
-
 
 #days-header {
   margin-top: 0px;
@@ -231,6 +220,8 @@ body {
 }
 
 //MAP STUFF
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 
 #map {
   height: 500px;
@@ -314,7 +305,9 @@ input {
 }
 
 
-//card customization
+//Card customization
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 .black {
   background-color: #373737;
 }
@@ -327,8 +320,9 @@ input {
   box-shadow: 0px 10px 5px 5px rgba(0,0,0,0.2);
 }
 
-
-//navbar
+//Navbar
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 
 #floating-panel {
   position: absolute;
@@ -345,15 +339,25 @@ input {
   border-radius: 5px;
 }
 
-//
-/////////////
+
 //Column Cards Stuff
-//////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 
+#page-wrap {
+  width: 1200px;
+  padding: 50px;
+  margin: 0 auto;
+  height: 100%;
+}
 
-#page-wrap { width: 1200px; padding: 50px; margin: 0 auto; height: 100%; }
+.info-col {
+  float: left;
+  width: 33%;
+  height: 100%;
+  padding: 50px 0 0 0;
+}
 
-.info-col { float: left; width: 33%; height: 100%; padding: 50px 0 0 0; }
 .info-col h2 { text-align: center; font-weight: normal; padding: 25px 0; }
 
 .image { height: 150px; text-indent: -9999px; display: block; border-radius: 5px}
