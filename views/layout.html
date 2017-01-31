@@ -13,21 +13,11 @@
 <div class="site-wrapper">
 
     <div class="site-wrapper-inner">
-        <div class="cover-container">
-            <div class="masthead clearfix">
-                <div class="inner">
-                    <!--<h3 class="masthead-brand">Cover</h3>-->
-                    <nav class="nav nav-masthead">
-                        <a class="nav-link active" href="#">Home</a>
-                        <a class="nav-link" href="#">Contact</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
 
         <div class="container-fluid">
-            <div class="row" id="map">
-                <h1>THIS IS THE MAP</h1>
+            <div class="row">
+                <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+                <div id="map"></div>
             </div>
         </div>
 
@@ -37,20 +27,11 @@
             </div>
         </div>
 
-
-        <!--<div class="cover-container">-->
-            <!--<div class="mastfoot">-->
-                <!--<div class="inner">-->
-                    <!--&lt;!&ndash;<p>	&#169; Charlie Shi & Ryan Skinner 2017</p>&ndash;&gt;-->
-                <!--</div>-->
-            <!--</div>-->
-
-        <!--</div>-->
-
     </div>
 
 </div>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAK1wE_kXFMgMTW2D3pJELryLllOqk0FA&callback=initMap">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAK1wE_kXFMgMTW2D3pJELryLllOqk0FA&libraries=places&callback=initAutocomplete"
+        async defer>
 </script>
 </body>
 </html>
