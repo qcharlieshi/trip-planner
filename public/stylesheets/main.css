@@ -69,9 +69,7 @@ body {
   font-weight: bold;
   color: rgba(255, 255, 255, 0.5);
   background-color: transparent;
-  border-bottom: .25rem solid transparent;
-  z-index: -1;
-}
+  border-bottom: .25rem solid transparent; }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
@@ -143,6 +141,7 @@ body {
 
 #main-container {
   width: 100%;
+  margin-top: 50%;
   min-height: 50%;
   height: 50%;
   padding: 50px 0 0 0;
@@ -158,13 +157,12 @@ body {
 #day-pages {
   margin-top: 10px; }
 
+#centerDay {
+  padding-top: 10px;
+  margin: 0 auto; }
+
 #day-button {
   margin-left: 5px;
   margin-top: 0px;
   border-radius: 2px;
   height: 34px; }
-#map {
-  height: 500px;
-  width: 100%;
-  margin-right: 0 !important;
-}

@@ -2,49 +2,130 @@
 
 {% block content %}
 
-<h3 id="days-header">Days</h3>
+<div class="container">
+    <div class="row">
+        <div class="col lg-2"></div>
+        <div class="col lg-3">
+            <form method="GET" action="/day/delete/{{current}}">
+                <button type="submit" class="btn btn-outline-primary" id="day-button">-Day</button>
+            </form>
+        </div>
+        <h3 id="days-header">Days</h3>
+        <div class="col lg-3">
+            <form method="POST" id="day-button" action="/day/{{templateDays.length + 1}}">
+                <button type="submit" class="btn btn-outline-primary">+Day</button>
+            </form>
+        </div>
+        <div class="col lg-2"></div>
+    </div>
+</div>
+
+<div class="container align-content-center">
+    <div class="row align-content-center">
+
+
+        <nav aria-label="..." id="centerDay">
+            <ul class="pagination pagination-sm">
+
+
+            {% if current == 1 %}
+                <li class="page-item disabled"><a class="page-link" tabindex="-1">&laquo;</a></li>
+            {% else %}
+                <a class="page-link" href="/day/{{current - 1}}" tabindex="-1">&laquo;</a>
+            {% endif %}
+
+                {% for day in templateDays %}
+                    {% if current == day.id %}
+                        <li class="page-item active"><a class="page-link" href="{{day.route}}">{{day.id}}</a></li>
+                    {% else %}
+                        <li class="page-item disabled"><a class="page-link" href="{{day.route}}">{{day.id}}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+            {% if current == templateDays.length %}
+                <li class="page-item disabled"><a class="page-link">&raquo;</a></li>
+            {% else %}
+                <li class="page-item"><a class="page-link" href="/day/{{+current + 1}}">&raquo;</a></li>
+            {% endif %}
+
+            </ul>
+        </nav>
 
 
 
-<form method="GET" action="/day/delete/{{current}}">
-    <button type="submit" class="btn btn-outline-primary" id="day-button">-Day</button>
-</form>
-
-<ul class="pagination" id="day-pages">
-
-    <li class="page-item">
-        {% if current == 1 %}
-        <a class="page-link" tabindex="-1">&laquo;</a>
-        {% else %}
-        <a class="page-link" href="/day/{{current - 1}}" tabindex="-1">&laquo;</a>
-        {% endif %}
-    </li>
-
-    {% for day in templateDays %}
-    {% if current == day.id %}
-    <li class="page-item active"><a href="{{day.route}}">{{day.id}}</a></li>
-    {% else %}
-    <li class="page-item"><a href="{{day.route}}">{{day.id}}</a></li>
-    {% endif %}
-
-    {% endfor %}
 
 
 
-    <li class="page-item">
-        {% if current == templateDays.length %}
-        <a class="page-link">&raquo;</a>
-        {% else %}
-        <a class="page-link" href="/day/{{current + 1}}">&raquo;</a>
-        {% endif %}
-    </li>
-
-    <form method="POST" action="/day/{{templateDays.length + 1}}">
-        <button type="submit" class="btn btn-outline-primary">+Day</button>
-    </form>
-</ul>
 
 
+
+
+
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col col-lg-4">
+            <div class="card">
+                <img class="card-img-top" src="../public/images/hotelTemp.png" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-block">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col col-lg-4">
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-block">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col col-lg-4">
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-block">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 
 
