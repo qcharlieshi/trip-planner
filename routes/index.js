@@ -6,6 +6,7 @@ let Hotels = require('../models/hotel');
 let Restaurants = require('../models/restaurant');
 let Activities = require('../models/activity');
 let Days = require('../models/day');
+let mapData = require('../js/map.js');
 
 router.get('/', function (req, res, next) {
     let hotelPromise = Hotels.findAll();
@@ -35,8 +36,6 @@ router.get('/', function (req, res, next) {
 
 router.get('/day/:id', function(req, res, next) {
     let currentDay = req.params.id;
-    //currentDay = true;
-
     Days.findAll().then(day => {
         res.render('index', { templateDays: day, current: currentDay })
     })

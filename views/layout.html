@@ -1,4 +1,8 @@
+<!doctype html>
+<html lang="en">
+
 <html>
+
 <head>
     <title>Trip Planner</title>
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -6,29 +10,22 @@
     <script src="/jquery/jquery.min.js"></script>
     <link href="/css/main.css" rel="stylesheet">
     <script src="/js/map.js"></script>
-
-
 </head>
 <body>
 <div class="site-wrapper">
-
     <div class="site-wrapper-inner">
-
         <div class="container-fluid">
             <div class="row">
                 <input id="pac-input" class="controls" type="text" placeholder="Search Box">
                 <div id="map"></div>
             </div>
         </div>
-
         <div class="container-fluid" id="main-container">
             <div class="row" id="main-bottom">
                 {% block content %}{% endblock %}
             </div>
         </div>
-
     </div>
-
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAK1wE_kXFMgMTW2D3pJELryLllOqk0FA&libraries=places&callback=initAutocomplete"
         async defer>
