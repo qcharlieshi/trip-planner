@@ -204,9 +204,10 @@ body {
 #pac-input {
   background-color: #fff;
   font-family: Roboto;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 300;
-  margin-left: 12px;
+  margin-left: 15px;
+  margin-top: 10px;
   padding: 0 11px 0 13px;
   text-overflow: ellipsis;
   width: 400px; }
@@ -227,6 +228,28 @@ body {
 input {
   color: black; }
 
+.black {
+  background-color: #373737; }
+
+.superRound {
+  border-radius: 10px; }
+
+.shadow {
+  box-shadow: 0px 10px 5px 5px rgba(0, 0, 0, 0.2); }
+
+#floating-panel {
+  position: absolute;
+  top: 10px;
+  left: 80%;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 5px;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 20px;
+  padding-left: 10px;
+  border-radius: 5px; }
+
 #page-wrap {
   width: 1200px;
   padding: 50px;
@@ -245,7 +268,7 @@ input {
   padding: 25px 0; }
 
 .image {
-  height: 100px;
+  height: 150px;
   text-indent: -9999px;
   display: block; }
 
@@ -253,7 +276,7 @@ input {
   background: url(/images/hotelTemp.jpg) center center no-repeat; }
 
 .restaurant {
-  background: url(/images/hotelTemp.jpg) center center no-repeat; }
+  background: url(/images/restaurantTemp.jpg) center center no-repeat; }
 
 .activity {
   background: url(/images/hotelTemp.jpg) center center no-repeat; }
@@ -262,7 +285,8 @@ dt {
   padding: 5px;
   background: #900;
   color: white;
-  border-bottom: 2px antiquewhite; }
+  border-bottom: 2px antiquewhite;
+  border-radius: 2px; }
 
 dd {
   position: absolute;
@@ -272,7 +296,9 @@ dd {
   margin-right: 50px;
   width: 100%;
   background: #900;
-  color: white; }
+  color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; }
 
 dt:nth-of-type(1) {
   background: #6D7993; }
