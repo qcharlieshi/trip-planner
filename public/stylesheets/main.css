@@ -148,11 +148,42 @@ body {
   /*set left/right padding according to needs*/
   background-color: #373737; }
 
+#logo {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  position: relative; }
+
+#logo:after {
+  content: "dreamdealer";
+  position: absolute;
+  left: 8px;
+  top: 32px; }
+
+#logo:after {
+  background: url(http://subtlepatterns.com/patterns/crossed_stripes.png) repeat;
+  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+  background-size: 4px 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -5;
+  display: block;
+  text-shadow: none; }
+
 #days-header {
   margin-top: 0px;
   margin-bottom: 0px;
   color: white;
   text-shadow: 2px 2px #000000; }
+
+#day-button {
+  margin-top: 20%; }
 
 #centerDay {
   padding-top: 10px;
@@ -270,7 +301,8 @@ input {
 .image {
   height: 150px;
   text-indent: -9999px;
-  display: block; }
+  display: block;
+  border-radius: 5px; }
 
 .hotel {
   background: url(/images/hotelTemp.jpg) center center no-repeat; }
@@ -279,7 +311,7 @@ input {
   background: url(/images/restaurantTemp.jpg) center center no-repeat; }
 
 .activity {
-  background: url(/images/hotelTemp.jpg) center center no-repeat; }
+  background: url(/images/activityTemp.jpg) center center no-repeat; }
 
 dt {
   padding: 5px;

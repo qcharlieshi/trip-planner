@@ -182,18 +182,48 @@ body {
   background-color: #373737;
 }
 
+//days stuff
+#logo {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  position: relative;
+}
+#logo:after {
+  content:"dreamdealer";
+  position: absolute;
+  left: 8px;
+  top: 32px;
+}
+#logo:after {
+  background: url(http://subtlepatterns.com/patterns/crossed_stripes.png) repeat;
+  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+  background-size: 4px 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -5;
+  display: block;
+  text-shadow: none;
+}
+
+
+
 #days-header {
   margin-top: 0px;
   margin-bottom: 0px;
   color: white;
   text-shadow: 2px 2px #000000;
 }
-//#day-button {
-//  margin-left: 5px;
-//  margin-top: 0px;
-//  border-radius: 2px;
-//  height: 34px;
-//}
+#day-button {
+  margin-top: 20%;
+
+}
 
 #centerDay {
   padding-top: 10px;
@@ -326,13 +356,13 @@ input {
 .info-col { float: left; width: 33%; height: 100%; padding: 50px 0 0 0; }
 .info-col h2 { text-align: center; font-weight: normal; padding: 25px 0; }
 
-.image { height: 150px; text-indent: -9999px; display: block;}
+.image { height: 150px; text-indent: -9999px; display: block; border-radius: 5px}
 
 .hotel { background: url(/images/hotelTemp.jpg) center center no-repeat; }
 .restaurant { background: url(/images/restaurantTemp.jpg) center center no-repeat; }
-.activity { background: url(/images/hotelTemp.jpg) center center no-repeat; }
+.activity { background: url(/images/activityTemp.jpg) center center no-repeat; }
 
-dt { padding: 5px; background: #900; color: white; border-bottom: 2px antiquewhite; border-radius: 2px}
+dt { padding: 5px; background: #900; color: white; border-bottom: 2px antiquewhite; border-radius: 2px;}
 dd { position: absolute; left: -9999px; top: -9999px; padding: 10px; margin-right: 50px; width: 100%; background: #900;  color: white;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
