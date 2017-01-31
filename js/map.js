@@ -1,4 +1,5 @@
 function initAutocomplete() {
+    let latLong = [];
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: -33.8688, lng: 151.2195},
         zoom: 13,
@@ -61,7 +62,11 @@ function initAutocomplete() {
                 bounds.extend(place.geometry.location);
             }
         });
-        console.log(...markers);
+
+
+        markers.forEach((marks) => {
+            latLong.push({title: marks.title, latitude: marks.position.lat(), longitude: marks.position.lng()})
+        });
         map.fitBounds(bounds);
     });
 }
